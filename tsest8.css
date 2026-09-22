@@ -1,0 +1,670 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(2, 2, 32);
+    height: 83px;
+}
+header nav{
+    display: flex;
+}
+ header ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0 20px 0 0;
+ }
+ header a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+ }
+ a:hover{
+    color: limegreen;
+ }
+ header span{
+    font-size: 35px;
+    color: white;
+ }
+ .home{
+     height: 750px;
+     background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgb(17, 17, 17, 0.7)), url(bg-header.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+background-attachment: fixed;
+max-width: 100%;
+ }
+ .home h1{
+    position: relative;
+ display: flex;
+ color: white;
+ justify-content: center;
+ align-items: center;
+ top: 20%;
+  font-size: 85px;
+ }
+ .home span{
+    color: blue;
+     display: flex;
+ justify-content: center;
+ padding: 0 20px 0 0;
+ }
+ .home p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+font-size: 25px;
+position: relative;
+top: 25%;
+font-size: 80px;
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+   margin: 40px 50px;
+
+}
+ .aboutimg img{
+display: flex;
+max-width: 470px;
+ }
+ .expp{
+    
+    position: relative;
+    top: 350px;
+    right: 42%;
+    background-color: rgba(81, 223, 81, 0.886);
+    height: 160px;
+    width: 450px;
+ text-align: center;
+ padding-top: 10px;
+ border: 1px solid limegreen;
+ border-radius: 7px;
+ color: white;
+ }
+ .expp span{
+    font-size: 40px;}
+.expp p{
+font-size: 25px;
+padding: 10px 0 0 0;
+    }
+
+.abouttext{
+  position: relative;
+ right: 60px;
+    }
+.abouttext h2{
+font-size: 52px;
+padding-bottom: 20px;
+
+    }
+    .abouttext p{
+      font-size: 19px;
+      color: gray;
+      width: 100%;
+    }
+    .about{
+        padding: 50px 0 0 10px;
+        display: flex;
+       align-items:center;
+       gap: 20px;
+    }
+    .about img{
+        border-radius: 50%;
+        width: 80px;
+    }
+    .text span{
+    
+        color: gray;
+    }
+    .text h3{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 70px;
+    h2{
+font-size: 50px;
+    }
+}
+.servicecards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    .row1,
+    .row2{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6{
+       padding: 10px 0 0 10px;
+        border: 1px solid rgba(128, 128, 128, 0.039);
+        border-radius: 3px;
+        width: 390px;
+        height: 160px;
+        transition: 0.3s;
+
+
+    }
+    .card1:hover,
+    .card2:hover,
+    .card3:hover,
+    .card4:hover,
+    .card5:hover,
+    .card6:hover{
+
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.skills{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 140px 70px;
+    h2{
+font-size: 50px;
+padding:0 0 50px 0;
+    }
+}
+.skillcards{display: flex;
+gap: 20px;}
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: #55c66a;
+}
+
+.circle1 {
+    background: conic-gradient(#55c66a 100%, #f2f2f2 0);
+}
+
+.circle2 {
+    background: conic-gradient(#55c66a 90%, #f2f2f2 90%);
+}
+
+.circle3 {
+    background: conic-gradient(#55c66a 80%, #f2f2f2 80%);
+}
+
+.circle4 {
+    background: conic-gradient(#55c66a 50%, #f2f2f2 50%);
+}
+
+.circle1 span,
+.circle2 span,
+.circle3 span,
+.circle4 span {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .skill1 h3,
+    .skill2 h3,
+    .skill3 h3,
+    .skill4 h3{
+        padding: 20px 0 0 0;
+    }
+
+    .skill1 p,
+    .skill2 p,
+    .skill3 p,
+    .skill4 p{
+padding: 10px 0 0 0 ;
+        color: gray;
+    }
+    .portofolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 140px 70px;
+    h2{
+font-size: 50px;
+    }
+}
+.list ul{
+    display: flex;
+    gap: 25px;
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+a:hover{
+    color: #55c66a;
+}
+.row1cards,
+.row2cards,
+.row3cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.row1cards img,
+.row2cards img,
+.row3cards img{
+    width: 400px;
+    height: 250px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 50px;
+    margin: 100px 0 ; 
+}
+
+.card {
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #55c96a;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.team {
+    padding: 0 65px 50px;
+    background-color: #fdfdfd;
+}
+
+.team h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0 0 55px;
+    color: #111;
+}
+
+.team-cards {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+
+.team-card {
+    width: 24%;
+    background-color: white;
+}
+
+.team-img {
+    width: 100%;
+    height: 300px;
+    background-color: #eef1f4;
+    overflow: hidden;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info {
+    text-align: center;
+    padding: 25px 10px 20px;
+}
+
+.team-info h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #111;
+}
+
+.team-info p {
+    margin: 15px 0 0;
+    font-size: 24px;
+    color: #999;
+}
+
+
+.packages {
+    display: flex;
+    gap: 1px;
+  padding: 0 0 0 80px;
+    
+    background-image: linear-gradient(rgba(91, 200, 109, 0.8), rgba(91, 200, 109, 0.8)), url(bg-pricing1.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+
+.package {
+    padding: 10px 10px;
+    height: 500px;
+    text-align: center;
+   ;
+}
+
+
+/* الكروت البيضاء */
+.regular,
+.premium {
+    background-color: #ffffff;
+}
+
+
+/* الكارت اللي في النص */
+.standard {
+    background-color: #5275d7;
+    color: white;
+}
+
+
+/* العنوان */
+.package h2 {
+    font-size: 35px;
+    font-weight: 700;
+
+    margin-bottom: 38px;
+
+    white-space: nowrap;
+}
+
+
+/* عناوين الكروت البيضاء */
+.regular h2,
+.premium h2 {
+    color: #5275d7;
+}
+
+
+/* عنوان الكارت الأزرق */
+.standard h2 {
+    color: #55c978;
+}
+
+
+/* السعر */
+.package h1 {
+    font-size: 50px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    margin-bottom: 43px;
+}
+
+
+.regular h1,
+.premium h1 {
+    color: #111111;
+}
+
+
+.standard h1 {
+    color: white;
+}
+
+
+/* الوصف */
+.package p {
+    font-size: 22px;
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    margin-bottom: 34px;
+
+}
+
+
+.regular p,
+.premium p {
+    color: #888888;
+}
+
+
+.standard p {
+    color: white;
+}
+
+
+/* القائمة */
+.package ul {
+    list-style: none;
+
+    text-align: left;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+/* عناصر القائمة */
+.package li {
+    position: relative;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 20px;
+
+    padding-left: 37px;
+}
+
+
+/* علامة الصح */
+.package li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: #4fc96d;
+
+    font-size: 23px;
+    font-weight: 500;
+}
+.testimonials{
+display: flex;
+flex-direction: row;
+gap: 35px;
+align-items: center;
+margin: 60px;
+}
+.column1text,
+.column2text{
+    color: gray;
+    padding-bottom: 20px;
+    font-size: 19px;
+}
+.column1img,
+.column2img {
+    display: flex;
+    align-items: center;
+}
+.column1img img,
+.column2img img{
+width: 90px;
+height: 90px;
+border-radius: 50%;
+
+ }
+ .textt h3{
+font-size: 25px;
+padding: 0 0 0 10px;
+ }
+ .textt span{
+    font-size: 19px;
+padding: 0 0 0 10px;
+color: gray;
+ }
+
+ 
+.contact {
+    min-height: 100vh;
+    padding: 50px 70px;
+    background-color: #1d1f20;
+    color: white;
+}
+
+.contact h1 {
+    font-size: 55px;
+    margin-bottom: 55px;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+
+/* Left Side */
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.contact-info p span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.social span {
+    font-size: 20px;
+    color: #ddd;
+}
+
+
+/* Right Side */
+
+.contact-form {
+    width: 60%;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.row input {
+    width: 50%;
+    height: 58px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    height: 125px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+    
+.btn{
+    width: 150px;
+    height: 40px;
+   background-color: #5275d7;
+   color: white;
+   border: 1px solid #5275d7;
+   border-radius: 5px;
+}
+footer{display: flex; 
+justify-content: center;
+height: 50px;
+background-color: #1d1f20;
+color: white;}
+
+
+
